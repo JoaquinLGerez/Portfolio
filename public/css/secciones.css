@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Roboto:wght@300&family=Work+Sans:wght@100;300;700&display=swap');
+
+
 .sobremi {
     width: 100%;
     height: 300px;
@@ -14,40 +16,27 @@
     padding-top: 40px;
     text-transform: uppercase;
     color: #15708f;
+    text-decoration: underline grey;
     text-decoration-color: #15708f;
 
 }
 
-.sobremi h3::after {
-    content: '';
-    display: block;
-    width: 190px;
-    height: 4px;
-    background: #484949;
-    position: absolute;
-    left: 45%;
-    margin-left: -18px;
-    bottom: 20;
-}
 
 .sobremi p {
     text-align: center;
     margin-top: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     color: rgb(37, 37, 37);
 
 }
 
-
-
-
-
 .lenguajes {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(54, 54, 54);
     margin: 20px;
-    letter-spacing: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -109,6 +98,16 @@
     padding-top: 40px;
     text-transform: uppercase;
     color: #eeeeee;
-    text-decoration-color: #15708f;
+    text-decoration: underline;
 }
 
+.separador {
+    width: 100%;
+    height: 70px;
+    background-color: #4d4d4e;
+}
+
+
+.shortcut  {
+    border-radius: 10px;
+}

@@ -1,4 +1,4 @@
-@import url(/css/secciones.css);
-@import url(/css/navbar.css);
-@import url(/css/general.css);
+@import url(/public/css/general.css);
+@import url(/public/css/navbar.css);
+@import url(/public/css/secciones.css);
 @import url(/particlesjs/particles.css);
