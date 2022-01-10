@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Roboto:wght@300&family=Work+Sans:wght@100;300;700&display=swap');
 
+/* Seccion sobre mi */
 
 .sobremi {
     width: 100%;
@@ -39,14 +40,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* End Sobre Mi - Section */
+
+/* Portfolio */
 
 .portfolio {
     width: 100%;
-    height: 300px;
+    height: 600px;
     background-image: url("/public/images/service-bg.jpg");
 
 }
-
 
 
 .portfolio h3 {
@@ -62,6 +65,50 @@
     text-decoration-color: #15708f;
 
 }
+
+
+.proyectoscard {
+    width: 260px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin:40px;
+    border: 1px solid rgb(207, 205, 205) ;
+}
+
+
+.cardtittle {
+    color: rgb(110, 29, 202);
+    font-size: 22px;
+    margin: 10px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+    span.descriptioncard {
+        color: rgb(167, 165, 165);
+        margin: 5px;
+    }
+
+    
+    .linkcard {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+img.logoimgproyectos {
+    width: 190px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #d4cdcd;
+    
+}
+
+
+
+
+
 
 .curriculum {
     width: 100%;
@@ -81,11 +128,11 @@
     text-decoration-color: #15708f;
 }
 
-
+/* Contacto section */
 
 .contacto {
     width: 100%;
-    height: 300px;
+    height: 450px;
     background-color: #1A8DB4;
 }
 
@@ -99,8 +146,69 @@
     text-transform: uppercase;
     color: #eeeeee;
     text-decoration: underline;
+    margin-bottom: 10px;
 }
 
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formcontainer input {
+    width: 500px;
+        height: 20px;
+        margin: 5px;
+        border:1px solid darkgrey;
+        border-radius: 5px;
+        padding: 10px;
+    
+}
+
+
+textarea {
+margin-top: 10px;
+width: 600px;
+border:1px solid darkgrey;
+        border-radius: 5px;
+        padding: 10px;
+}
+
+
+.formcontainer button {
+    height: 30px;
+    margin: 10px;
+    background-color: #1A8DB4;
+    border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Lato',sans-serif;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+
+
+
+.formcontainer button:hover {
+    background-color: #137697;
+    border: 1px solid #137697;
+    transition: 0.5s ease;
+    color: white;
+
+}
+/* --------- */
 .separador {
     width: 100%;
     height: 70px;
