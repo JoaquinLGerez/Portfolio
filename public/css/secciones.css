@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Roboto:wght@300&family=Work+Sans:wght@100;300;700&display=swap');
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Seccion sobre mi */
 
 .sobremi {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sobremi h3 {
     text-align: center;
-    font-size: 35px;
+    font-size: 29px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
     font-weight: bold;
@@ -34,10 +43,38 @@
 
 .lenguajes {
     text-align: center;
-    font-size: 30px;
-    color: rgb(54, 54, 54);
+    font-size: 20px;
+    color: #e91e63;
     margin: 20px;
     font-family: 'Poppins', sans-serif;
+}
+
+.lenguajes svg {
+    width: 50px;
+    height: 50px;
+}
+
+ .fa-js{
+    COLOR:#F7E018;
+}
+.fa-node{
+    color:#43853D;
+}
+
+.fa-react{
+    color:#61DAFB;
+}
+
+.fa-css3-alt{
+color:#1572B6;
+}
+
+.fa-bootstrap{
+    color:#7952B3;
+}
+
+.fa-html5{
+    color:#F06529;
 }
 
 /* End Sobre Mi - Section */
@@ -46,40 +83,29 @@
 
 .portfolio {
     width: 100%;
-    height: 600px;
-    background-image: url("/public/images/service-bg.jpg");
-
+    background-image: url("/images/service-bg.jpg");
+    display: flex;
+    justify-content: center;
 }
 
-
-.portfolio h3 {
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 2px;
-    font-weight: bold;
-    padding-top: 40px;
-    text-transform: uppercase;
-    color: #15708f;
-    text-decoration: underline;
-    text-decoration-color: #15708f;
-
-}
 
 
 .proyectoscard {
-    width: 260px;
+    width: 900px;
     height: 300px;
     background-color: rgb(255, 255, 255);
     margin:40px;
     border: 1px solid rgb(207, 205, 205) ;
+    margin-top: 70px;
 }
 
 
 .cardtittle {
-    color: rgb(110, 29, 202);
-    font-size: 22px;
-    margin: 10px;
+    color: #1a8db4;
+    font-size: 17px;
+    margin-top: 32px;
+    margin-left: 65px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
@@ -87,6 +113,7 @@
     span.descriptioncard {
         color: rgb(167, 165, 165);
         margin: 5px;
+        font-size: 13px
     }
 
     
@@ -94,7 +121,7 @@
         text-decoration: none;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }    
 
 img.logoimgproyectos {
@@ -102,10 +129,41 @@ img.logoimgproyectos {
     background-color: white;
     border-radius: 10px;
     border: 1px solid #d4cdcd;
-    
+    margin-left: 25px;
+}
+
+.imagencenter {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.description {
+    padding: 30px;
+}
+
+.portfolioh1{
+display: flex;
+position: absolute;
+}
+
+.portfolioh1 h1 {
+    text-align: center;
+    font-size: 29px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #15708f;
+    text-decoration: underline;
+    text-decoration-color: #15708f;
+    margin: 12px;
 }
 
 
+/*  */
 
 
 
@@ -117,7 +175,7 @@ img.logoimgproyectos {
 
 .curriculum h3 {
     text-align: center;
-    font-size: 35px;
+    font-size: 29px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
     font-weight: bold;
@@ -132,17 +190,17 @@ img.logoimgproyectos {
 
 .contacto {
     width: 100%;
-    height: 450px;
+    height: 500px;
     background-color: #1A8DB4;
 }
 
 .contacto h3 {
     text-align: center;
-    font-size: 35px;
+    font-size: 29px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
     font-weight: bold;
-    padding-top: 40px;
+    padding-top: 20px;    
     text-transform: uppercase;
     color: #eeeeee;
     text-decoration: underline;
@@ -162,52 +220,133 @@ img.logoimgproyectos {
     width: 500px;
         height: 20px;
         margin: 5px;
-        border:1px solid darkgrey;
-        border-radius: 5px;
+        border: 1px solid rgb(71 71 71 / 77%);
         padding: 10px;
     
 }
 
 
+.formcontainer input:focus-visible {
+        outline: 2px solid rgb(112, 112, 112);
+        transition: 0.5s ease-in-out
+    }
+
+
 textarea {
-margin-top: 10px;
-width: 600px;
-border:1px solid darkgrey;
-        border-radius: 5px;
+        margin-top: 10px;
+        width: 400px;
+        border: 1px solid rgb(71 71 71 / 77%);
         padding: 10px;
 }
 
-
-.formcontainer button {
-    height: 30px;
-    margin: 10px;
-    background-color: #1A8DB4;
-    border: 1px solid rgb(255, 255, 255);
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  font-family: 'Lato',sans-serif;
-  font-size: 14px;
-  height: 36px;
-  line-height: 27px;
-  min-width: 54px;
-  padding: 0 16px;
-  text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: pre;
+textarea{
+    outline:0 none;
+    border:1px solid silver;
 }
 
+.submitbtn{
+        background-color: #137697;
+        color: white;
+        width: 132px;
+        height: 36px;
+        border: none;
+        cursor: pointer;
+    margin-top: 10px;
+    }
 
-
-.formcontainer button:hover {
-    background-color: #137697;
+    .submitbtn:hover{
+        background-color: #232627;
     border: 1px solid #137697;
     transition: 0.5s ease;
     color: white;
+    }
+
+
+/* form estilosos */
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 450px;
+    background: #fff;
+    padding:30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.wrapper .input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.wrapper .input-data input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    outline: none;
+}
+.wrapper .input-data label{
+    position: absolute;
+    bottom: 10px;
+    left:0;
+    color:grey;
+    pointer-events: none;
 
 }
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #4158d0
+}
+
+.wrapper .input-data label {
+    position: absolute;
+    bottom: 10px;
+    left:  0;
+    color:grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.wrapper .input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background:silver;
+}
+
+.input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #11366d;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+} 
+
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before {
+    transform: scaleX(1);
+}
+
+
+
+
+
 /* --------- */
 .separador {
     width: 100%;
@@ -218,4 +357,105 @@ border:1px solid darkgrey;
 
 .shortcut  {
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    
+    .formcontainer input {
+        width: 200px;
+    }
+
+    .sobremi p {
+        text-align: center;
+        margin-top: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        color: rgb(37, 37, 37);
+        font-size: 15px;
+        padding: 15px;
+  }
+
+  .sobremi h3, .contacto h3, .curriculum h3,.portfolioh1 h1 {
+      font-size: 27px;
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 602px) {
+    img.logoimgproyectos{
+        width: 130px;
+        height: 130px;
+    }
+
+    .imagencenter {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linkcard{
+        align-items: center;   
+    }
+
+    .cardtittle{
+        font-size: 15px;
+        margin-left: 34px;
+    }
+
+    .sobremi{
+        height: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 441px) {
+   textarea{
+       width: 300px;
+   }
+   
+    .description span{
+        display: none;
+    }
+
+    .imagencenter img {
+        width: 150px;
+        height: 150px;
+        margin-top: 30px;
+    }
+
+.cardtittle {
+    font-size: 17px;
+}
+}
+
+
+@media only screen and (max-width: 370px) {
+  textarea{
+      width: 200px;
+  }
+
+  .sobremi{
+    height: 420px;
+}
+
+}
+
+
+/* Boton scroll top */
+.btntop a{
+    position: fixed;
+    font-size: 40px;
+    color:grey;
+    bottom:40px;
+}
+
+.btntop i {
+    transform:  rotate(270deg);
+    -webkit-transform: rotate(270deg);
 }
