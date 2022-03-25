@@ -2,8 +2,6 @@ const express = require('express')
 const app = express()
 const PORT = 1111;
 const path = require('path')
-let fs = require('fs');
-const contactValidator = require('./validations/contactValidator');
 
 //---------View engine setup------------------
 
@@ -22,8 +20,6 @@ app.use('/', index);
 
 
 /* Controller */
-
-
 
 
 app.listen(PORT, () => console.log(`Servidor corriendo en puerto ${PORT}
